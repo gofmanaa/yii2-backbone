@@ -1,0 +1,22 @@
+{
+    "name": "gofmanaa/yii2-backbone",
+    "description": "yii2 backbone asset",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension","backbone"," js"],
+    "license": "BSD-4-Clause",
+    "authors": [
+        {
+            "name": "Gofman A",
+            "email": "gofmanaa@gmail.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*",
+        "bower-asset/backbone": "^1"
+    },
+    "autoload": {
+        "psr-4": {
+            "gofmanaa\\backbone\\": ""
+        }
+    }
+}
