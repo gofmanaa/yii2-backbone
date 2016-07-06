@@ -16,11 +16,6 @@ class Backbone extends AssetBundle
 
     public $sourcePath = '@bower';
 
-    public $js = [
-        'underscore/underscore.js',
-        'backbone/backbone.js',
-    ];
-
     public $depends = [
         'yii\web\JqueryAsset',
     ];
@@ -29,8 +24,8 @@ class Backbone extends AssetBundle
     {
         parent::init();
         $this->js = [
-                'underscore/underscore.js',
-                'backbone/backbone.js'
+            YII_DEBUG?'underscore/underscore.js':'underscore/underscore-min.js',
+            YII_DEBUG?'backbone/backbone.js':'backbone/backbone-min.js'
             ];
     }
 
